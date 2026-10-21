@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://massifapartments.vercel.app/sitemap.xml

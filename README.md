@@ -2,6 +2,8 @@
 
 Site de prezentare în limba română pentru cele patru apartamente din Poiana Brașov: **Hidden Ray, Hidden Crest, Hidden Forest și Hidden Nest**.
 
+Adresă: [massifapartments.vercel.app](https://massifapartments.vercel.app/).
+
 Site static, fără dependențe de instalat. Include prezentări individuale, galerie filtrabilă cu navigare din tastatură, meniu mobil, întrebări frecvente, localizare și formular care deschide Booking.com cu perioada aleasă. Formularul nu creează o rezervare și nu verifică disponibilitatea în timp real pe acest site. Contactul pentru un apartament anume se face prin e-mail.
 
 ## Dezvoltare locală

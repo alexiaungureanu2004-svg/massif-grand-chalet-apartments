@@ -24,7 +24,7 @@ apartments.forEach((apartment,index) => {
 
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#navigare');
-function closeMenu() { menuButton.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); }
+function closeMenu() { menuButton.setAttribute('aria-expanded','false'); menuButton.setAttribute('aria-label','Deschide meniul'); nav.classList.remove('is-open'); }
 menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
   menuButton.setAttribute('aria-expanded',String(open));
