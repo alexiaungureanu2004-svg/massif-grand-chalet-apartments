@@ -1,0 +1,7 @@
+{
+  "name": "massif-grand-chalet-apartments",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node server.mjs", "check": "node --check dist/app.js" }
+}
