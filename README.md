@@ -4,7 +4,7 @@ Site de prezentare în limba română pentru cele patru apartamente din Poiana B
 
 Adresă: [massifapartments.vercel.app](https://massifapartments.vercel.app/).
 
-Site static, fără dependențe de instalat. Include prezentări individuale, galerie filtrabilă cu navigare din tastatură, meniu mobil, întrebări frecvente, localizare și formular care deschide Booking.com cu perioada aleasă. Formularul nu creează o rezervare și nu verifică disponibilitatea în timp real pe acest site. Contactul pentru un apartament anume se face prin e-mail.
+Site static, fără dependențe de instalat. Include prezentări individuale, galerie filtrabilă cu navigare din tastatură, meniu mobil, întrebări frecvente, localizare și contact direct pe WhatsApp la +40 745 177 080, cu mesaj pregătit. Vizitatorul trimite mesajul manual din WhatsApp; site-ul nu efectuează rezervări automate. E-mailul rămâne disponibil ca alternativă.
 
 ## Dezvoltare locală
 
@@ -32,7 +32,7 @@ Proiect Vercel separat: `massif-grand-chalet-apartments`. Framework: Other / sta
 - [TikTok](https://www.tiktok.com/@massif_apartments): contul furnizat de proprietar.
 - Fonturi Manrope și Cormorant Garamond, distribuite sub SIL Open Font License, servite local. Licențele sunt în `licenses/`.
 
-Nu sunt publicate tarife, distanțe până la pârtii sau scoruri de evaluare care pot deveni inexacte. Ora de sosire și condițiile rezervării se confirmă cu gazda și prin Booking.com.
+Nu sunt publicate tarife, distanțe până la pârtii sau scoruri de evaluare care pot deveni inexacte. Disponibilitatea, tarifele, ora de sosire și condițiile rezervării se confirmă direct cu gazda.
 
 Fotografiile sunt utilizate pentru site-ul proprietarului, conform solicitării acestuia. Nu există instrumente de analiză, publicitate, cookie-uri proprii, plăți sau colectare de date prin formulare interne.
 
@@ -40,7 +40,7 @@ Fotografiile sunt utilizate pentru site-ul proprietarului, conform solicitării 
 
 - `dist/index.html`: structură, metadate și conținut.
 - `dist/style.css`: design și adaptare mobilă.
-- `dist/app.js`: apartamente, galerii, dialoguri și validarea perioadei.
+- `dist/app.js`: apartamente, galerii, dialoguri și linkul de contact WhatsApp.
 - `dist/assets/`: fotografii și fonturi locale.
 
 Acest repository și proiectul Vercel sunt independente de celelalte proiecte ale contului.
