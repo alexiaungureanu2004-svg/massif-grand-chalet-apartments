@@ -2,7 +2,7 @@
 
 ## Stare reală
 
-Formularul de pe site pregătește cereri directe, cu perioada și oaspeții selectați. Nu efectuează rezervări, nu modifică inventarul și nu preia încă tarife sau disponibilitate live. Reducerea de 10% este politica comercială solicitată de proprietar; o sumă calculată nu este afișată în lipsa unei surse de preț confirmate.
+Formularul de pe site pregătește cereri directe, cu perioada și oaspeții selectați. Nu efectuează rezervări, nu modifică inventarul și nu preia încă tarife sau disponibilitate live. Condițiile comerciale se stabilesc cu proprietarul; site-ul și mesajele prezintă doar oferta personalizată, fără procente sau comparații publice. O sumă calculată nu este afișată în lipsa unei surse de preț confirmate.
 
 Proprietarul gestionează momentan tarifele și calendarul direct în Booking Extranet. Proiectul Vercel nu are credențiale de integrare configurate. Nu există chei API în frontend sau în acest repository.
 
@@ -19,7 +19,7 @@ Furnizorul și abonamentul trebuie alese împreună cu proprietarul înainte de 
 1. Conectarea proprietății Booking 13320837 la furnizorul ales, cu autorizarea proprietarului.
 2. Maparea verificată a celor patru apartamente la identificatorii reali de cameră. Denumirile publice sunt generice în Booking, deci nu se presupune ordinea lor.
 3. Definirea tarifului de comparație: aceleași date, ocupanți, apartament, condiții de anulare, taxe și monedă. Tarifele Genius/mobile și promoțiile pot diferi de tariful public standard.
-4. Calcularea tarifului direct din baza de comparație verificată: 90% din valoare, rotunjit în unitățile monetare minore. Stocul indisponibil sau erorile furnizorului nu se tratează drept disponibilitate confirmată.
+4. Calcularea tarifului direct conform regulilor comerciale stabilite separat cu proprietarul, rotunjit în unitățile monetare minore. Stocul indisponibil sau erorile furnizorului nu se tratează drept disponibilitate confirmată.
 5. Integrarea server-side ori a motorului de rezervări al furnizorului. Credențialele se configurează exclusiv ca secrete în proiectul Vercel Massif.
 6. Înainte de rezervări automate, reverificarea prețului și stocului, crearea confirmării și actualizarea inventarului comun pentru a evita rezervări suprapuse.
 7. Verificare cu date reale înainte de afișarea publică a prețurilor live. Până atunci, cererile rămân cu confirmare manuală.

@@ -75,14 +75,14 @@ stayForm.addEventListener('submit', event=> {
   const heading = document.createElement('h4');
   heading.textContent = 'Cererea ta'; heading.tabIndex = -1;
   const list = document.createElement('dl');
-  [['Perioadă',`${arrivalLabel} – ${departureLabel}`],['Durată',`${nights} ${nights===1?'noapte':'nopți'}`],['Apartament',apartmentLabel],['Oaspeți',guestLabel],['Tarif direct','Ofertă la cerere · avantaj de 10%']].forEach(([label,value])=> {
+  [['Perioadă',`${arrivalLabel} – ${departureLabel}`],['Durată',`${nights} ${nights===1?'noapte':'nopți'}`],['Apartament',apartmentLabel],['Oaspeți',guestLabel],['Tarif direct','Ofertă personalizată la cerere']].forEach(([label,value])=> {
     const row = document.createElement('div');
     const term = document.createElement('dt'); term.textContent = label;
     const description = document.createElement('dd'); description.textContent = value;
     row.append(term,description); list.append(row);
   });
   summary.append(heading,list);
-  const request = `${welcomeMessage}\n\nSosire: ${arrivalLabel}\nPlecare: ${departureLabel}\nDurata: ${nights} ${nights===1?'noapte':'nopti'}\nApartament: ${apartmentLabel}\nOaspeti: ${guestLabel}\n\nVa rog sa imi confirmati disponibilitatea si oferta directa cu 10% mai mica fata de tariful Booking, pentru aceleasi conditii.`;
+  const request = `${welcomeMessage}\n\nSosire: ${arrivalLabel}\nPlecare: ${departureLabel}\nDurata: ${nights} ${nights===1?'noapte':'nopti'}\nApartament: ${apartmentLabel}\nOaspeti: ${guestLabel}\n\nVa rog sa imi confirmati disponibilitatea, oferta si conditiile pentru acest sejur.`;
   emailLink.href = `mailto:massifapartgrandchalet@gmail.com?subject=${encodeURIComponent('Cerere sejur Massif · '+arrival.value+' – '+departure.value)}&body=${encodeURIComponent(request)}`;
   chatLink.href = `https://wa.me/40745177080?text=${encodeURIComponent(request)}`;
   actions.hidden = false;
