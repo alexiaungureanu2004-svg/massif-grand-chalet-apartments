@@ -4,7 +4,7 @@ Site de prezentare în limba română pentru cele patru apartamente din Poiana B
 
 Adresă: [massifapartments.vercel.app](https://massifapartments.vercel.app/).
 
-Site static, fără dependențe de instalat. Include prezentări individuale, galerie filtrabilă cu navigare din tastatură, meniu mobil, întrebări frecvente, localizare, trei clipuri TikTok încorporate și formular de planificare direct pe site (sosire, plecare, apartament, adulți, copii și vârste). Formularul calculează durata și pregătește o cerere prin e-mail sau WhatsApp. O pictogramă WhatsApp fixă oferă acces rapid la contact. Cererile sunt confirmate manual de gazdă; nu sunt rezervări automate.
+Site static, fără dependențe de instalat. Include prezentări individuale, galerie filtrabilă cu navigare din tastatură, meniu mobil, întrebări frecvente, localizare, trei clipuri TikTok încorporate, fragmente anonimizate din recenzii Booking.com și formular de planificare direct pe site (sosire, plecare, apartament, adulți, copii și vârste). Formularul calculează durata și pregătește o cerere prin e-mail sau WhatsApp. O pictogramă WhatsApp fixă oferă acces rapid la contact. Cererile sunt confirmate manual de gazdă; nu sunt rezervări automate.
 
 ## Dezvoltare locală
 
@@ -45,3 +45,5 @@ Fotografiile sunt utilizate pentru site-ul proprietarului, conform solicitării 
 - `dist/assets/`: fotografii și fonturi locale.
 
 Acest repository și proiectul Vercel sunt independente de celelalte proiecte ale contului.
+
+Recenzii: trei fragmente scurte din pagina publică Booking.com a proprietății, consultată la 22 octombrie 2026. Sunt afișate fără nume, fotografii de profil sau note individuale; sursa este indicată în secțiune. Selecția este statică.
