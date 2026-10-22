@@ -13,8 +13,6 @@ const apartments = [
     photos:[['629887726.jpg','Dormitor în tonuri aurii'],['629887685.jpg','Living și bucătărie deschisă'],['629887694.jpg','Zonă de luat masa'],['629887728.jpg','Lumină caldă în dormitor'],['629887689.jpg','Bucătărie echipată']] }
 ];
 
-const whatsappMessage = 'Buna ziua! As dori sa planific un sejur in Poiana Brasov la Massif Grand Chalet Apartments';
-const whatsappUrl = `https://wa.me/40745177080?text=${encodeURIComponent(whatsappMessage)}`;
 const apartmentGrid = document.querySelector('#apartment-grid');
 apartments.forEach((apartment,index) => {
   const article = document.createElement('article');
@@ -94,7 +92,13 @@ const detailContent = document.querySelector('#detail-content');
 document.querySelectorAll('[data-apartment]').forEach(button=>button.addEventListener('click',()=> {
   const apartment = apartments.find(a=>a.id === button.dataset.apartment);
   const photos = allPhotos.filter(photo=>photo.apartment === apartment.id);
-  detailContent.innerHTML = `<div class="detail-layout"><div class="detail-cover"><img src="/assets/${apartment.photos[0][0]}" alt="${apartment.name} — ${apartment.photos[0][1]}"></div><div class="detail-copy"><p class="eyebrow">${apartment.mood}</p><h2 id="detail-title">${apartment.name}</h2><p>${apartment.description}</p><div class="detail-facts"><span>Până la 4 adulți</span><span>Pat matrimonial</span><span>Living cu canapea extensibilă</span><span>Bucătărie proprie</span><span>Baie proprie</span><span>Balcon / terasă</span></div><a class="button" href="${whatsappUrl}" target="_blank" rel="noopener noreferrer">Planifică pe WhatsApp <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:massifapartgrandchalet@gmail.com?subject=${encodeURIComponent('Sejur la '+apartment.name)}">Întreabă prin e-mail <span aria-hidden="true">↗</span></a><div class="detail-thumbs">${photos.slice(0,4).map((photo,index)=>`<button data-detail-photo="${index}" aria-label="Mărește ${photo.label}"><img src="/assets/${photo.file}" alt="${photo.label}"></button>`).join('')}</div></div></div>`;
+  detailContent.innerHTML = `<div class="detail-layout"><div class="detail-cover"><img src="/assets/${apartment.photos[0][0]}" alt="${apartment.name} — ${apartment.photos[0][1]}"></div><div class="detail-copy"><p class="eyebrow">${apartment.mood}</p><h2 id="detail-title">${apartment.name}</h2><p>${apartment.description}</p><div class="detail-facts"><span>Până la 4 adulți</span><span>Pat matrimonial</span><span>Living cu canapea extensibilă</span><span>Bucătărie proprie</span><span>Baie proprie</span><span>Balcon / terasă</span></div><a class="button" href="#rezervare" data-plan-apartment="${apartment.id}">Planifică acest sejur <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:massifapartgrandchalet@gmail.com?subject=${encodeURIComponent('Sejur la '+apartment.name)}">Întreabă prin e-mail <span aria-hidden="true">↗</span></a><div class="detail-thumbs">${photos.slice(0,4).map((photo,index)=>`<button data-detail-photo="${index}" aria-label="Mărește ${photo.label}"><img src="/assets/${photo.file}" alt="${photo.label}"></button>`).join('')}</div></div></div>`;
+  detailContent.querySelector('[data-plan-apartment]').addEventListener('click',()=> {
+    const select = document.querySelector('#stay-apartment');
+    select.value = apartment.id;
+    select.dispatchEvent(new Event('change',{bubbles:true}));
+    detailDialog.close();
+  });
   detailContent.querySelectorAll('[data-detail-photo]').forEach(thumb=>thumb.addEventListener('click',()=>openLightbox(photos,Number(thumb.dataset.detailPhoto))));
   detailDialog.showModal();
 }));
