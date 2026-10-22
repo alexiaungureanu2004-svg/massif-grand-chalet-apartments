@@ -4,7 +4,7 @@ const apartments = [
     photos:[['40509942.webp','Dormitor cu arcadă decorativă'],['40509938.webp','Living în tonuri calde'],['40509934.webp','Bucătărie cu insulă'],['40509940.webp','Detaliu din dormitor'],['40509935.webp','Living și zonă de luat masa'],['40509939.webp','Detalii de interior']] },
   { id:'crest', name:'Hidden Crest', mood:'TONURI PĂMÂNTII & CONFORT',
     description:'O canapea teracotă, lemn cald și lumină discretă. Un interior cu personalitate, în care serile se așază firesc.',
-    photos:[['629708834.jpg','Living cu canapea teracotă'],['629708822.jpg','Dormitor cu lumină ambientală'],['629708705.jpg','Living și fotoliu'],['629708850.jpg','Dormitor și fereastră']] },
+    photos:[['hidden-crest-bedroom.jpg','Dormitor Hidden Crest, cu pat matrimonial și lumină caldă'],['629708834.jpg','Living cu canapea teracotă'],['629708822.jpg','Dormitor cu lumină ambientală'],['629708705.jpg','Living și fotoliu'],['629708850.jpg','Dormitor și fereastră']] },
   { id:'forest', name:'Hidden Forest', mood:'INSPIRAT DE NATURĂ',
     description:'Accente de verde și un decor de pădure în dormitor. O atmosferă liniștită, pentru momente în care vrei să încetinești.',
     photos:[['40512703.webp','Dormitor cu decor inspirat de pădure'],['40512702.webp','Dormitor și accente verzi'],['40512700.webp','Pat matrimonial și lumină caldă'],['40512701.webp','Detalii din dormitor']] },
